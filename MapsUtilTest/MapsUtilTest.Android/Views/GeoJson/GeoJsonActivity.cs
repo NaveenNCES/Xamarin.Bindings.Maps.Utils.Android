@@ -122,10 +122,9 @@ namespace Sample.Droid.Views.GeoJson
                 }
             }).ConfigureAwait(false);
         }
-
-        public void OnFeatureClick(Feature p0)
+        public void OnFeatureClick(Feature feature)
         {
-            Toast.MakeText(this, "Feature clicked: " + p0.GetProperty("title"), ToastLength.Short).Show();
+            Toast.MakeText(this, "Feature clicked: " + feature.GetProperty("title"), ToastLength.Short).Show();
         }
     }
 }
